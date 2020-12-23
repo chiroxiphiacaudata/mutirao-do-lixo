@@ -1,0 +1,146 @@
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>Mutirão Dia Mundial da Limpeza 2019 - ONDA VERDE</h:title>
+    <model>
+      <instance>
+        <data id="build_Mutir-o-Dia-Mundial-da-Limpeza-2019-ONDA-VERDE_1568867175">
+          <meta>
+            <instanceID/>
+          </meta>
+          <tipo/>
+          <outro-lixo/>
+          <onde/>
+          <outro-aonde/>
+          <lugar/>
+          <foto/>
+        </data>
+      </instance>
+      <itext>
+        <translation lang="English">
+          <text id="/data/tipo:label">
+            <value>Tipo do lixo:</value>
+          </text>
+          <text id="/data/tipo:option0">
+            <value>plástico</value>
+          </text>
+          <text id="/data/tipo:option1">
+            <value>vidro</value>
+          </text>
+          <text id="/data/tipo:option2">
+            <value>lata</value>
+          </text>
+          <text id="/data/tipo:option3">
+            <value>papel</value>
+          </text>
+          <text id="/data/tipo:option4">
+            <value>orgânico</value>
+          </text>
+          <text id="/data/tipo:option5">
+            <value> não reciclável</value>
+          </text>
+          <text id="/data/tipo:option6">
+            <value>outro</value>
+          </text>
+          <text id="/data/outro-lixo:label">
+            <value>O que?</value>
+          </text>
+          <text id="/data/onde:label">
+            <value>Aonde?</value>
+          </text>
+          <text id="/data/onde:option0">
+            <value>No rio</value>
+          </text>
+          <text id="/data/onde:option1">
+            <value>Na margem</value>
+          </text>
+          <text id="/data/onde:option2">
+            <value>No mato</value>
+          </text>
+          <text id="/data/onde:option3">
+            <value>outro</value>
+          </text>
+          <text id="/data/outro-aonde:label">
+            <value>O que?</value>
+          </text>
+          <text id="/data/lugar:label">
+            <value>Pegue a localização</value>
+          </text>
+          <text id="/data/foto:label">
+            <value>Tire uma foto</value>
+          </text>
+        </translation>
+      </itext>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+      <bind nodeset="/data/tipo" type="select"/>
+      <bind nodeset="/data/outro-lixo" type="string" relevant="(selected(/data/tipo, 'outro'))"/>
+      <bind nodeset="/data/onde" type="select"/>
+      <bind nodeset="/data/outro-aonde" type="string" relevant="(selected(/data/onde, 'outro'))"/>
+      <bind nodeset="/data/lugar" type="geopoint"/>
+      <bind nodeset="/data/foto" type="binary"/>
+    </model>
+  </h:head>
+  <h:body>
+    <select ref="/data/tipo">
+      <label ref="jr:itext('/data/tipo:label')"/>
+      <item>
+        <label ref="jr:itext('/data/tipo:option0')"/>
+        <value>plastico</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/tipo:option1')"/>
+        <value>vidro</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/tipo:option2')"/>
+        <value>lata</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/tipo:option3')"/>
+        <value>papel</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/tipo:option4')"/>
+        <value>organico</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/tipo:option5')"/>
+        <value>naoreciclavel</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/tipo:option6')"/>
+        <value>outro</value>
+      </item>
+    </select>
+    <input ref="/data/outro-lixo">
+      <label ref="jr:itext('/data/outro-lixo:label')"/>
+    </input>
+    <select ref="/data/onde">
+      <label ref="jr:itext('/data/onde:label')"/>
+      <item>
+        <label ref="jr:itext('/data/onde:option0')"/>
+        <value>rio</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/onde:option1')"/>
+        <value>margem</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/onde:option2')"/>
+        <value>mato</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/data/onde:option3')"/>
+        <value>outro</value>
+      </item>
+    </select>
+    <input ref="/data/outro-aonde">
+      <label ref="jr:itext('/data/outro-aonde:label')"/>
+    </input>
+    <input ref="/data/lugar">
+      <label ref="jr:itext('/data/lugar:label')"/>
+    </input>
+    <upload ref="/data/foto" mediatype="image/*">
+      <label ref="jr:itext('/data/foto:label')"/>
+    </upload>
+  </h:body>
+</h:html>
