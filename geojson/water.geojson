@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "sept-2019-VALLENZUOLO-briefcase",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "meta-instanceID": "uuid:849d75ce-87c2-45d9-89eb-7f91d0344018", "ID": "MR30", "point": "Spring", "feelings": "Memories", "sense": " Hearing \/ Touch", "class": "Water", "picture": "1562261099003.jpg", "location-Latitude": 43.163115193199999, "location-Longitude": 13.3610130197, "location-Altitude": 403.52965198250001, "location-Accuracy": 6.0 }, "geometry": { "type": "Point", "coordinates": [ 13.3610130197, 43.163115193199999 ] } },
+{ "type": "Feature", "properties": { "meta-instanceID": "uuid:53ac0663-434f-4121-a4a7-e1c9284f9f65", "ID": "DB26", "point": "Stream", "feelings": "Familiarity", "sense": "Sight \/ Smell", "class": "Water", "picture": "1562258939679.jpg", "location-Latitude": 43.15917062, "location-Longitude": 13.36488905, "location-Altitude": 312.87756347660002, "location-Accuracy": 4.288 }, "geometry": { "type": "Point", "coordinates": [ 13.36488905, 43.15917062 ] } },
+{ "type": "Feature", "properties": { "meta-instanceID": null, "ID": "BR28", "point": "Channel", "feelings": "Freshness", "sense": "Touch", "class": "Water", "picture": "null.jpg", "location-Latitude": 43.15915, "location-Longitude": 13.364517, "location-Altitude": null, "location-Accuracy": null }, "geometry": { "type": "Point", "coordinates": [ 13.364517, 43.15915 ] } },
+]
+};

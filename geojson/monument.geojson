@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "sept-2019-VALLENZUOLO-briefcase",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "meta-instanceID": "uuid:85611a14-0ea1-422d-bd40-55af61ad18cf", "ID": "T17", "point": "Virgin Mary", "feelings": "Glance", "sense": "Sight ", "class": "Monument", "picture": "1562262803579.jpg", "location-Latitude": 43.16325246, "location-Longitude": 13.36114802, "location-Altitude": 374.98315429690001, "location-Accuracy": 4.288 }, "geometry": { "type": "Point", "coordinates": [ 13.36114802, 43.16325246 ] } },
+]
+};
