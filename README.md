@@ -1,2 +1,4 @@
-# mutirao-do-lixo
-MUTIRÃO DO LIXO NO DIA MUNDIAL DA LIMPEZA  RIO BOA ESPERANÇA 19 DE SETEMBRO DE 2019  MAPEAMENTO PARTICIPATIVO DO LIXO
+# Mutirão do lixo  
+Mutirão do lixo no dia mundial da limpeza (19 de setembro de 2019)  
+Rio boa esperança  
+Mapeamento participativo do lixo  
